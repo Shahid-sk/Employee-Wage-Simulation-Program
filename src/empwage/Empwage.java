@@ -26,6 +26,19 @@ public class Empwage {
 		else {
 			System.out.println("Employee is absent");
 		}
+	System.out.println("**Swithcase started**");
+	switch ((int)empcheck) {
+	case 1:
+		System.out.println("Employee is fulltime present");
+		DAILY_EMPWAGE = WAGE_PERHOUR * FULL_DAYHOUR;
+		break;
+	case 2:
+		System.out.println("Employee is parttime present");
+		DAILY_EMPWAGE = WAGE_PERHOUR * PART_TIMEHOUR;
+		break;
+	default:
+		System.out.println("Employee is absent");
 	}
-
+		System.out.println("Employee wage is:" +DAILY_EMPWAGE);
+	}
 }
